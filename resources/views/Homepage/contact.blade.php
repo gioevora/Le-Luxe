@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="section-title mb-4">
                     <span>Stay connected with us!</span>
-                    <h1>Contact Us</h1>
+                    <h2>Contact Us</h2>
                 </div>
 
                 <div class="contact-form">
