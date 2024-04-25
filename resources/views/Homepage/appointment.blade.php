@@ -22,7 +22,8 @@
                 </div>
 
                 <div class="section-content">
-                    <form action="" method="post">
+                    <form action="{{ route('submit.appointment') }}" method="POST">
+                        @csrf
                         <div class="d-flex justify-content-center">
                             <div class="col-md-10">
                                 <div class="card">
@@ -78,7 +79,8 @@
                                         <div class="tab">
                                             <div class="schedule">
                                                 <div class="reminder">
-                                                    <small>Please select your preferred date and time of appointment.</small>
+                                                    <small>Please select your preferred date and time of
+                                                        appointment.</small>
                                                 </div>
                                                 <hr>
 
@@ -86,21 +88,22 @@
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="">Date </label>
+                                                            <label for="date">Date </label>
                                                             <input type="date" name="date" id="date">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="">Time</label>
+                                                            <label for="time">Time</label>
                                                             <input type="time" name="time" id="time">
                                                         </div>
                                                     </div>
 
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="">Pax</label>
-                                                            <input type="number" name="pax" id="pax" placeholder="0">
+                                                            <label for="pax">Pax</label>
+                                                            <input type="number" name="pax" id="pax"
+                                                                placeholder="0">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -110,14 +113,7 @@
 
                                         <div class="tab">
                                             <div class="row">
-                                                <div class="col-md-6">
 
-                                                    <div class="form-group">
-                                                        <label for="">Pax</label>
-                                                        <input type="input" placeholder="Search here...">
-                                                    </div>
-
-                                                </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="">Select Services</label>
@@ -138,14 +134,18 @@
                                                         <div class="row">
                                                             <div class="col-md-4 px-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="facial1">
-                                                                    <label class="form-check-label" for="facial1">Deep Cleansing Facial</label>
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="facial1">
+                                                                    <label class="form-check-label"
+                                                                        for="facial1">Deep Cleansing Facial</label>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-4 px-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="facial2">
-                                                                    <label class="form-check-label" for="facial2">Diamond Peel Facial</label>
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="facial2">
+                                                                    <label class="form-check-label"
+                                                                        for="facial2">Diamond Peel Facial</label>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -155,8 +155,10 @@
                                                         <div class="row">
                                                             <div class="col-md-4 px-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="flexCheckChecked">
-                                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="flexCheckChecked">
+                                                                    <label class="form-check-label"
+                                                                        for="flexCheckChecked">
                                                                         Diamond Peel Facial
                                                                     </label>
                                                                 </div>
@@ -168,8 +170,10 @@
                                                         <div class="row">
                                                             <div class="col-md-4 px-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="flexCheckChecked">
-                                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="flexCheckChecked">
+                                                                    <label class="form-check-label"
+                                                                        for="flexCheckChecked">
                                                                         Manicure
                                                                     </label>
                                                                 </div>
@@ -181,8 +185,10 @@
                                                         <div class="row">
                                                             <div class="col-md-4 px-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="flexCheckChecked">
-                                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="flexCheckChecked">
+                                                                    <label class="form-check-label"
+                                                                        for="flexCheckChecked">
                                                                         Brazillian
                                                                     </label>
                                                                 </div>
@@ -194,8 +200,10 @@
                                                         <div class="row">
                                                             <div class="col-md-4 px-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="flexCheckChecked">
-                                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="flexCheckChecked">
+                                                                    <label class="form-check-label"
+                                                                        for="flexCheckChecked">
                                                                         Tatto Removal
                                                                     </label>
                                                                 </div>
@@ -207,8 +215,10 @@
                                                         <div class="row">
                                                             <div class="col-md-4 px-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="flexCheckChecked">
-                                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        id="flexCheckChecked">
+                                                                    <label class="form-check-label"
+                                                                        for="flexCheckChecked">
                                                                         Tummy
                                                                     </label>
                                                                 </div>
@@ -463,7 +473,9 @@
             const selectedService = this.value; // Get selected value from dropdown
 
             // Hide all service-related sections
-            document.querySelectorAll('.facial-service, .waxing-service, .nail-service, .hair-service, .laser-service, .slimming-service').forEach((section) => {
+            document.querySelectorAll(
+                '.facial-service, .waxing-service, .nail-service, .hair-service, .laser-service, .slimming-service'
+            ).forEach((section) => {
                 section.style.display = 'none'; // Hide by default
             });
 
@@ -558,7 +570,8 @@
 
             // Event listener for checkbox changes
             $('.form-check-input').change(function() {
-                const serviceLabel = $(this).closest('.form-check').find('.form-check-label').text(); // Get the label text
+                const serviceLabel = $(this).closest('.form-check').find('.form-check-label')
+                    .text(); // Get the label text
 
                 if ($(this).is(':checked')) {
                     // Add the service label to the array
@@ -578,7 +591,8 @@
             function updateServiceList() {
                 let listContent = ''; // Create an empty list
                 selectedServices.forEach(service => {
-                    listContent += `<div><i class="fa-solid fa-check"></i> ${service}</div>`; // Include the check icon with the service name
+                    listContent +=
+                        `<div><i class="fa-solid fa-check"></i> ${service}</div>`; // Include the check icon with the service name
                 });
                 $('.service-list').html(listContent); // Insert the updated list content into the service-list div
             }
