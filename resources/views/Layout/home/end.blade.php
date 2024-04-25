@@ -14,12 +14,19 @@
 
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
 
 <script>
     AOS.init();
 </script>
+
+@if (session('success'))
+<script>
+    toastr.success("{{ session('success') }}");
+</script>
+@endif
 
 
 
