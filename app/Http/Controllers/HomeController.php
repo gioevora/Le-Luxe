@@ -37,4 +37,8 @@ class HomeController extends Controller
         return view('Homepage.services', compact('services','wax','nails','hair','lasers','slim'));
     }
 
+    public function aboutus(){
+        return view('Homepage.aboutus');
+    }
+
 }

@@ -86,7 +86,7 @@
                                 <ul>
                                     <li><a href="/">Home</a></li>
                                     <li><a href="/Le-Luxe/Our-Services">Our Services</a></li>
-                                    <li><a href="/Le-Luxe/About-us">About Us</a></li>
+                                    <li><a href="/Le-Luxe/About-Us">About Us</a></li>
                                     <li><a href="/Le-Luxe/Contact-us">Contact Us</a></li>
                                 </ul>
                             </nav>
