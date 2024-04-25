@@ -33,26 +33,26 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">First Name</label>
-                                        <input type="text" name="email" id="" class="form-control" placeholder="Juan">
+                                        <label for="first_name">First Name</label>
+                                        <input type="text" name="first_name" id="last_name" class="form-control" placeholder="Juan">
                                     </div>
 
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="">Last Name</label>
-                                        <input type="text" name="email" id="" class="form-control" placeholder="Dela Cruz">
+                                        <label for="last_name">Last Name</label>
+                                        <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Dela Cruz">
                                     </div>
 
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="">Your Email</label>
-                                <input type="email" name="email" id="" class="form-control" placeholder="leluxe-clinic@gmail.com">
+                                <label for="email">Your Email</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="leluxe-clinic@gmail.com">
                             </div>
                             <div class="form-group">
-                                <label for="">Your Message</label>
-                                <textarea class="form-control" name="" id="" cols="30" rows="10" placeholder="Say something...."></textarea>
+                                <label for="message">Your Message</label>
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Say something...."></textarea>
                             </div>
                             <button class="email-button">
                                 <span>Send Message</span>
