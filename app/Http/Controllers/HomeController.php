@@ -3,6 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Service;
+use App\Models\Waxing;
+use App\Models\Nails;
+use App\Models\Hairs;
+use App\Models\Laser;
+use App\Models\Slimming;
 
 class HomeController extends Controller
 {
@@ -10,21 +16,25 @@ class HomeController extends Controller
     public function index(){
         return view('Homepage.index');
     }
-
-    // Our Services & Pricing
-    public function services(){
-        return view('Homepage.services');
+    public function contact_us(){
+        return view('Homepage.contact');
     }
+
 
     // Contact us
-    public function contact_us(){
-        return view('homepage.contact');
+    public function book(){
+        $services = Service::all();
+        return view('Homepage.appointment', compact('services'));
+    }
+    // Our Services & Pricing
+    public function services(){
+        $services = Service::all();
+        $wax = Waxing::all();
+        $nails = Nails::all();
+        $hair = Hairs::all();
+        $lasers = Laser::all();
+        $slim = Slimming::all();
+        return view('Homepage.services', compact('services','wax','nails','hair','lasers','slim'));
     }
 
-    // Book an appointment
-    public function book(){
-        return view('Homepage.appointment');
-    }
-       
-    
 }
