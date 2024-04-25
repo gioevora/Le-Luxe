@@ -192,17 +192,18 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <img src="/Assets/images/user.jpg" alt="" class="img-circle">
+                    <img src="/Assets/images/ManFormalPhotoSuit257.png" alt="" class="img-circle">
                     <div class="team-name text-center ">
-                        <h4>JUSTINE DE CASTRO</h4>
+                        <h4>JUSTIN DE CASTRO</h4>
                     </div>
                     <div class="team-position text-center ">
                         <h5>Developer</h5>
                     </div>
                     <div class="team-socmed d-flex justify-content-center gap-2 ">
-                        <i class='bx bxl-facebook'></i>
-                        <i class='bx bxl-instagram-alt'></i>
-                        <i class='bx bxl-telegram'></i>
+                        <a href="https://www.facebook.com/tine.tainy"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/jmdec21"><i class='bx bxl-instagram-alt'></i>
+                        <a href="https://web.telegram.org/k/#5645362073"><i class='bx bxl-telegram'></i></a>
+
                     </div>
                 </div>
             </div>

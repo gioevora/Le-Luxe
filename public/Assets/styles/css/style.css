@@ -151,7 +151,8 @@ ol {
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
 }
-p{
+
+p {
     color: var(--var-darkcolor);
     font-weight: 400;
 }
@@ -299,7 +300,7 @@ p{
 
 }
 
-.sticky{
+.sticky {
     background-color: var(--var-secondary);
 }
 
@@ -339,7 +340,7 @@ p{
 
 .menu-item .nav-menu .mainmenu {
     display: inline-block;
-    
+
 }
 
 .menu-item .nav-menu .mainmenu li {
@@ -355,7 +356,7 @@ p{
 .menu-item .nav-menu .mainmenu li a {
     font-size: 18px;
     color: var(--var-darkcolor);
-    margin: 16px 8px ;
+    margin: 16px 8px;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -385,7 +386,8 @@ p{
     border: 2px solid var(--var-highlights);
     margin-left: 10px;
 }
-.button-video svg{
+
+.button-video svg {
     color: var(--var-highlights);
 }
 
@@ -591,7 +593,8 @@ p{
     right: 126px;
     top: -5px;
 }
-.work-section h5{
+
+.work-section h5 {
     font-weight: 700;
     color: var(--var-primary);
     text-transform: uppercase;
@@ -654,37 +657,70 @@ p{
 
 
 .employee-section img {
-   border-radius: 50%;
-   width: 100%;
-   max-width: 200px;
-   max-height: 200px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   box-shadow: rgba(244, 224, 201, 0.24) 0px 3px 8px;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(244, 224, 201, 0.24) 0px 3px 8px;
 }
 
-.team-name h4{
+.team-name h4 {
     margin-top: 8px;
     font-weight: 600;
     color: var(--var-primary);
 }
-.team-position h5{
+
+.team-position h5 {
     margin-top: 8px;
     color: var(--var-darkcolor);
     font-weight: 500;
 }
 
-.team-socmed i{
+.team-socmed i {
     margin: 14px 8px;
     font-size: 1.5em;
     color: var(--var-highlights);
     background-color: var(--var-secondary-background);
     padding: 8px;
     border-radius: 14px;
-    
+
 }
 
+.why-us {
+    background-color: rgb(220, 220, 220, .3);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.why-us .col-md-6 .reason{
+    margin: 8px;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.why-us .col-md-6 img{
+    width: 60px;
+    background-color: var(--var-secondary-background);
+    padding: 8px;
+    border-radius: 8px;
+    margin: 16px;
+   
+}
+
+.why-us .title h4{
+    color: var(--var-primary);
+    font-weight: 600;
+}
+
+.why-us .description p{
+    color: var(--var-darkcolor);
+    font-weight: 500;
+    font-size: 14px;
+}
 /* FAQ */
 
 .question-section .section-title h2 {
@@ -1666,6 +1702,11 @@ input[type=email] {
     transform: scale(0.95);
 }
 
+.about-text .section-text .btn {
+    background-color: var(--var-primary);
+    color: var(--var-light);
+}
+
 /* BOOK APPOINTMENT */
 
 .appoinment-section .form-group input,
@@ -1713,7 +1754,7 @@ input[type=email] {
     font-size: 17px;
     cursor: pointer;
     margin-top: 24px;
-    border-radius: 8px;
+
 }
 
 .button-control:hover {
