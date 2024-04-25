@@ -329,6 +329,7 @@
                                             <div class="d-flex justify-content-between ">
                                                 <button class="button-control" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
                                                 <button class="button-control" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                                <button class="button-control" type="Submit" id="submitBtn" onclick="nextPrev(1)">Submit</button>
                                             </div>
                                         </div>
                                         <!-- Circles which indicates the steps of the form: -->
@@ -371,11 +372,14 @@
             //... and fix the Previous/Next buttons:
             if (n == 0) {
                 document.getElementById("prevBtn").style.display = "none";
+                document.getElementById("submitBtn").style.display = "none";
             } else {
                 document.getElementById("prevBtn").style.display = "inline";
+                document.getElementById("submitBtn").style.display = "none";
             }
             if (n == (x.length - 1)) {
-                document.getElementById("nextBtn").innerHTML = "Submit";
+                document.getElementById("submitBtn").style.display = "inline";
+                document.getElementById("nextBtn").style.display = "none";
             } else {
                 document.getElementById("nextBtn").innerHTML = "Next";
             }
