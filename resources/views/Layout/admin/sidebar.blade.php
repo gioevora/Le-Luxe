@@ -18,6 +18,14 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link text-white {{ request()->is('/dashboard') ? 'active' : '' }}" href="{{ route('contact.index') }}">
+                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="material-icons opacity-10">dashboard</i>
+                    </div>
+                    <span class="nav-link-text ms-1">Contact</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link text-white {{ request()->is('/product') ? 'active' : '' }}" href="/product">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="fa-solid fa-bag-shopping fa-lg"></i>
@@ -25,6 +33,22 @@
                     <span class="nav-link-text ms-1">Product</span>
                 </a>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white {{ request()->is('services/*') ? 'active' : '' }}" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Services</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item text-gray {{ request()->is('services/*') ? 'active' : '' }}" href="{{ route('services.index') }}">Facial</a></li>
+                    <li><a class="dropdown-item text-gray {{ request()->is('waxing/*') ? 'active' : '' }}" href="{{ route('waxing.index') }}">Waxing</a></li>
+                    <li><a class="dropdown-item text-gray {{ request()->is('nails/*') ? 'active' : '' }}" href="{{ route('nails.index') }}">Nails</a></li>
+                    <li><a class="dropdown-item text-gray {{ request()->is('hairs/*') ? 'active' : '' }}" href="{{ route('hairs.index') }}">Hair</a></li>
+                </ul>
+
+            </li>
+
         </ul>
     </div>
 </aside>
