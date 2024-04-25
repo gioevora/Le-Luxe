@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Laser extends Model
 {
+    protected $table = 'laser';
     protected $fillable = ['service', 'price', 'title'];
 }
