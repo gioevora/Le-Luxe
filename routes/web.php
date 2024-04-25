@@ -10,6 +10,7 @@ use App\Http\Controllers\HairsController;
 use App\Http\Controllers\LaserController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ContactFormController;
+use App\Http\Controllers\AppointmentController;
 /*
 
 /*
@@ -72,3 +73,9 @@ Route::post('/submit-form', [ContactFormController::class, 'submitForm'])->name(
 
 Route::get('/Contacts', [ContactFormController::class, 'index'])->name('contact.index');
 Route::post('/contacts/{id}/accept', [ContactFormController::class, 'accept'])->name('contacts.accept');
+
+//apointment
+Route::post('/submit-appointment', [AppointmentController::class, 'store'])->name('submit.appointment');
+Route::get('/appointment', [AppointmentController::class, 'index'])->name('appointment.index');
+
+Route::post('/appointments/{id}/accept', [AppointmentController::class, 'accept'])->name('appointment.accept');

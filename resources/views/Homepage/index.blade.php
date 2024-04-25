@@ -171,165 +171,42 @@
                 <div class="col-lg-12">
                     <div class="section-title">
                         <span>Want to know</span>
-                        <h2>Our Staff?</h2>
+                        <h2>Our Team?</h2>
                     </div>
                 </div>
             </div>
 
-            <div class="row employee-carousel">
-                <div class="col-6">
-                    <h3 class="mb-3">Top Staff</h3>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-3">
+                    <img src="/Assets/images/user.jpg" alt="" class="img-circle">
+                    <div class="team-name text-center ">
+                        <h4>GIOLO EVORA</h4>
+                    </div>
+                    <div class="team-position text-center ">
+                        <h5>Developer</h5>
+                    </div>
+                    <div class="team-socmed d-flex justify-content-center gap-2 ">
+                        <i class='bx bxl-facebook'></i>
+                        <i class='bx bxl-instagram-alt'></i>
+                        <i class='bx bxl-telegram'></i>
+                    </div>
                 </div>
-                <div class="col-6 text-right">
-                    <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                        <i class="fa fa-arrow-left"></i>
-                    </a>
-                    <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <i class="fa fa-arrow-right"></i>
-                    </a>
-                </div>
-                <div class="col-12">
-                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-
-                                    <div class="col-md-4">
-                                        <div class="card">
-                                            <img src="/assets/images/img_avatar.png" alt="Avatar" style="width:100%">
-                                            <div class="container text-center ">
-                                                <h4><b>Giolo Evora</b></h4>
-                                                <small>Full Stack Developer</small>
-                                            </div>
-                                            <div class="social-media d-flex justify-content-center">
-                                                <div class="facebook">
-                                                    <i class="fa-brands fa-facebook fa-lg"></i>
-                                                </div>
-                                                <div class="instagram">
-                                                    <i class="fa-brands fa-square-instagram fa-lg"></i>
-                                                </div>
-                                                <div class="telegram">
-                                                    <i class="fa-brands fa-telegram fa-lg"></i>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card">
-                                            <img src="/assets/images/img_avatar.png" alt="Avatar" style="width:100%">
-                                            <div class="container text-center ">
-                                                <h4><b>Giolo Evora</b></h4>
-                                                <small>Full Stack Developer</small>
-                                            </div>
-                                            <div class="social-media d-flex justify-content-center">
-                                                <div class="facebook">
-                                                    <i class="fa-brands fa-facebook fa-lg"></i>
-                                                </div>
-                                                <div class="instagram">
-                                                    <i class="fa-brands fa-square-instagram fa-lg"></i>
-                                                </div>
-                                                <div class="telegram">
-                                                    <i class="fa-brands fa-telegram fa-lg"></i>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card">
-                                            <img src="/assets/images/img_avatar.png" alt="Avatar" style="width:100%">
-                                            <div class="container text-center ">
-                                                <h4><b>Giolo Evora</b></h4>
-                                                <small>Full Stack Developer</small>
-                                            </div>
-                                            <div class="social-media d-flex justify-content-center">
-                                                <div class="facebook">
-                                                    <i class="fa-brands fa-facebook fa-lg"></i>
-                                                </div>
-                                                <div class="instagram">
-                                                    <i class="fa-brands fa-square-instagram fa-lg"></i>
-                                                </div>
-                                                <div class="telegram">
-                                                    <i class="fa-brands fa-telegram fa-lg"></i>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="card">
-                                            <img src="/assets/images/img_avatar.png" alt="Avatar" style="width:100%">
-                                            <div class="container text-center ">
-                                                <h4><b>Giolo Evora</b></h4>
-                                                <small>Full Stack Developer</small>
-                                            </div>
-                                            <div class="social-media d-flex justify-content-center">
-                                                <div class="facebook">
-                                                    <i class="fa-brands fa-facebook fa-lg"></i>
-                                                </div>
-                                                <div class="instagram">
-                                                    <i class="fa-brands fa-square-instagram fa-lg"></i>
-                                                </div>
-                                                <div class="telegram">
-                                                    <i class="fa-brands fa-telegram fa-lg"></i>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card">
-                                            <img src="/assets/images/img_avatar.png" alt="Avatar" style="width:100%">
-                                            <div class="container text-center ">
-                                                <h4><b>Giolo Evora</b></h4>
-                                                <small>Full Stack Developer</small>
-                                            </div>
-                                            <div class="social-media d-flex justify-content-center">
-                                                <div class="facebook">
-                                                    <i class="fa-brands fa-facebook fa-lg"></i>
-                                                </div>
-                                                <div class="instagram">
-                                                    <i class="fa-brands fa-square-instagram fa-lg"></i>
-                                                </div>
-                                                <div class="telegram">
-                                                    <i class="fa-brands fa-telegram fa-lg"></i>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="card">
-                                            <img src="/assets/images/img_avatar.png" alt="Avatar" style="width:100%">
-                                            <div class="container text-center ">
-                                                <h4><b>Giolo Evora</b></h4>
-                                                <small>Full Stack Developer</small>
-                                            </div>
-                                            <div class="social-media d-flex justify-content-center">
-                                                <div class="facebook">
-                                                    <i class="fa-brands fa-facebook fa-lg"></i>
-                                                </div>
-                                                <div class="instagram">
-                                                    <i class="fa-brands fa-square-instagram fa-lg"></i>
-                                                </div>
-                                                <div class="telegram">
-                                                    <i class="fa-brands fa-telegram fa-lg"></i>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-md-3">
+                    <img src="/Assets/images/user.jpg" alt="" class="img-circle">
+                    <div class="team-name text-center ">
+                        <h4>JUSTINE DE CASTRO</h4>
+                    </div>
+                    <div class="team-position text-center ">
+                        <h5>Developer</h5>
+                    </div>
+                    <div class="team-socmed d-flex justify-content-center gap-2 ">
+                        <i class='bx bxl-facebook'></i>
+                        <i class='bx bxl-instagram-alt'></i>
+                        <i class='bx bxl-telegram'></i>
                     </div>
                 </div>
             </div>
+
 
         </div>
 
@@ -395,7 +272,7 @@
                                                             <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
                                                         </svg>
                                                     </a>
-                                                   
+
                                                 </h4>
                                             </div>
                                             <div id="collapse3" class="panel-collapse collapse">
@@ -409,11 +286,11 @@
                                             <div class="panel-heading">
                                                 <h4 class="panel-title">
                                                     <a class="icon-right" data-toggle="collapse" data-parent="#accordion" href="#collapse4" onclick="changeIcon(this)">What payment method are accepted?
-                                                    <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
+                                                        <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
                                                             <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
                                                         </svg>
                                                     </a>
-                                                    
+
                                                 </h4>
                                             </div>
                                             <div id="collapse4" class="panel-collapse collapse">
@@ -436,7 +313,7 @@
     </section>
 
     <!-- Services Section End -->
-    
+
     <!-- <section class="services-section spad">
         <div class="container">
             <div class="row">
