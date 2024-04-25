@@ -11,6 +11,7 @@
     --var-header-font: 'CustomFont';
     --var-accent: #49706B;
     --var-highlights: #DBA26D;
+    --var-secondary-background: rgb(244, 224, 201, .3);
     --var-gradient-header: linear-gradient(to bottom, #B38A54, #DAA06B, #8C5A31, #6d492c);
 
 
@@ -650,37 +651,38 @@ p{
 
 }
 
-.employee-section .section-title h2 {
-    font-weight: 700;
-    font-family: 'montserrat', sans-serif;
-    color: var(--var-primary);
-}
+
 
 .employee-section img {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+   border-radius: 50%;
+   width: 100%;
+   max-width: 200px;
+   max-height: 200px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   box-shadow: rgba(244, 224, 201, 0.24) 0px 3px 8px;
 }
 
-.employee-section .card {
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-
-}
-
-
-.employee-section h4 {
-    color: var(--var-header);
+.team-name h4{
     margin-top: 8px;
-    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+    color: var(--var-primary);
+}
+.team-position h5{
+    margin-top: 8px;
+    color: var(--var-darkcolor);
+    font-weight: 500;
 }
 
-.employee-section .social-media i {
-    margin: 16px 8px;
-    color: var(--var-header);
-}
-
-.employee-section .employee-carousel {
-    margin: 16px 64px;
+.team-socmed i{
+    margin: 14px 8px;
+    font-size: 1.5em;
+    color: var(--var-highlights);
+    background-color: var(--var-secondary-background);
+    padding: 8px;
+    border-radius: 14px;
+    
 }
 
 /* FAQ */
