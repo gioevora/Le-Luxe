@@ -79,3 +79,5 @@ Route::post('/submit-appointment', [AppointmentController::class, 'store'])->nam
 Route::get('/appointment', [AppointmentController::class, 'index'])->name('appointment.index');
 
 Route::post('/appointments/{id}/accept', [AppointmentController::class, 'accept'])->name('appointment.accept');
+
+Route::get('/Le-Luxe/About-Us', [HomeController::class, 'aboutus']);
