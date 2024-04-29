@@ -130,53 +130,53 @@
                     <div class="col-md-6 px-0">
                         <div class="reason">
 
-                        
-
-                        <div class="icon-wrapper">
-                            <img src="/Assets/icons/customer-service.png" alt="">
-                        </div>
-                        <div class="title px-3">
-                            <h4>Comprehensive Services</h4>
-                        </div>
-                        <div class="description">
-                            <p>We offer a wide range of services, including facials, body treatments, hair removal, and more. Whether you're looking for a quick touch-up or a full transformation, we've got you covered.</p>
-                        </div>
-                        </div>
 
 
-                    </div>
-
-                    <div class="col-md-6 px-0">
-                        <div class="reason">
-                        <div class="icon-wrapper">
-                            <img src="/Assets/icons/customer-support.png" alt="">
+                            <div class="icon-wrapper">
+                                <img src="/Assets/icons/customer-service.png" alt="">
+                            </div>
+                            <div class="title px-3">
+                                <h4>Comprehensive Services</h4>
+                            </div>
+                            <div class="description">
+                                <p>We offer a wide range of services, including facials, body treatments, hair removal, and more. Whether you're looking for a quick touch-up or a full transformation, we've got you covered.</p>
+                            </div>
                         </div>
-                        <div class="title px-3">
-                            <h4> Customer-Centric Approach</h4>
-                        </div>
-                        <div class="description">
-                            <p>Your satisfaction is our success. We value your feedback and continuously strive to improve our services. Our friendly staff is always here to answer your questions and make sure you leave with a smile.</p>
-                        </div>
-                        </div>
-                        
 
 
                     </div>
 
                     <div class="col-md-6 px-0">
                         <div class="reason">
-                        <div class="icon-wrapper">
-                            <img src="/Assets/icons/tag.png" alt="">
-                        </div>
-                        <div class="title px-3">
-                            <h4> Affordable Pricing</h4>
-                        </div>
-                        <div class="description">
-                            <p>Quality doesn't have to come at a high cost. We offer competitive pricing and various packages to suit different budgets, ensuring you get the best value for your money.</p>
-                        </div>
+                            <div class="icon-wrapper">
+                                <img src="/Assets/icons/customer-support.png" alt="">
+                            </div>
+                            <div class="title px-3">
+                                <h4> Customer-Centric Approach</h4>
+                            </div>
+                            <div class="description">
+                                <p>Your satisfaction is our success. We value your feedback and continuously strive to improve our services. Our friendly staff is always here to answer your questions and make sure you leave with a smile.</p>
+                            </div>
                         </div>
 
-                        
+
+
+                    </div>
+
+                    <div class="col-md-6 px-0">
+                        <div class="reason">
+                            <div class="icon-wrapper">
+                                <img src="/Assets/icons/tag.png" alt="">
+                            </div>
+                            <div class="title px-3">
+                                <h4> Affordable Pricing</h4>
+                            </div>
+                            <div class="description">
+                                <p>Quality doesn't have to come at a high cost. We offer competitive pricing and various packages to suit different budgets, ensuring you get the best value for your money.</p>
+                            </div>
+                        </div>
+
+
 
 
                     </div>
@@ -188,11 +188,79 @@
 
         </section>
 
+        <section class="gallery spad">
+            <div class="container">
+                <div class="section-title mb-4">
+                    <span>discorver our unique collection</span>
+                    <h2>Our Gallery</h2>
+                </div>
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal">
+                    <span class="close"><i class='bx bx-x' ></i></span>
+                    <img class="modal-content" id="modalImage">
+                    <div class="caption" id="caption"></div>
+                    <button id="prevBtn" class="nav-btn"><i class='bx bx-chevron-left'></i></button>
+                    <button id="nextBtn" class="nav-btn"><i class='bx bx-chevron-right'></i></button>
+                </div>
+
+                <!-- Image Gallery -->
+                <div class="img-section">
+                    <img src="/Assets/images/about1.jpg" class="img-container" alt="Image 1">
+                    <img src="/Assets/images/about2.jpg" class="img-container" alt="Image 2">
+                    <img src="/Assets/images/about3.jpg" class="img-container" alt="Image 3">
+                    <img src="/Assets/images/about4.jpg" class="img-container" alt="Image 4">
+                </div>
+            </div>
+
+        </section>
+
 
     </main>
 
 
     @include('layout.home.footer')
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("imageModal");
+
+        // Get the image and insert it inside the modal
+        var modalImg = document.getElementById("modalImage");
+        var captionText = document.getElementById("caption");
+        var imgThumbnails = document.querySelectorAll(".img-container");
+        var currentIndex = 0;
+
+        // Open modal and display clicked image
+        imgThumbnails.forEach((img, index) => {
+            img.addEventListener("click", function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerText = this.alt;
+                currentIndex = index;
+            });
+        });
+
+        // Close modal
+        var closeModal = document.querySelector(".close");
+        closeModal.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+
+        // Navigate through images
+        var prevBtn = document.getElementById("prevBtn");
+        var nextBtn = document.getElementById("nextBtn");
+
+        prevBtn.addEventListener("click", function() {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : imgThumbnails.length - 1;
+            modalImg.src = imgThumbnails[currentIndex].src;
+        });
+
+        nextBtn.addEventListener("click", function() {
+            currentIndex = (currentIndex < imgThumbnails.length - 1) ? currentIndex + 1 : 0;
+            modalImg.src = imgThumbnails[currentIndex].src;
+        });
+    </script>
 
 
 
