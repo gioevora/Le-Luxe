@@ -205,16 +205,13 @@
                 </div>
 
 
-
-
-
                 <div class="img-section">
                     @foreach($galleries as $gallery)
 
                     <img class="img-container" src="{{ asset('images/' . $gallery->image_path) }}" alt="{{ $gallery->title }}">
                     @endforeach
                 </div>
-                </div>
+            </div>
 
 
         </section>
