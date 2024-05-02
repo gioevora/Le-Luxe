@@ -10,6 +10,8 @@ use App\Models\Hairs;
 use App\Models\Laser;
 use App\Models\Slimming;
 
+use App\Models\Gallery;
+
 class HomeController extends Controller
 {
     // Homepage
@@ -38,7 +40,8 @@ class HomeController extends Controller
     }
 
     public function aboutus(){
-        return view('Homepage.aboutus');
+        $galleries = Gallery::all();
+        return view('Homepage.aboutus', compact('galleries'));
     }
 
 }
