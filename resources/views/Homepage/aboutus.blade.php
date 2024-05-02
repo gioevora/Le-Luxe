@@ -204,14 +204,18 @@
                     <button id="nextBtn" class="nav-btn"><i class='bx bx-chevron-right'></i></button>
                 </div>
 
-                <!-- Image Gallery -->
+
+
+
+
                 <div class="img-section">
-                    <img src="/Assets/images/about1.jpg" class="img-container" alt="Image 1">
-                    <img src="/Assets/images/about2.jpg" class="img-container" alt="Image 2">
-                    <img src="/Assets/images/about3.jpg" class="img-container" alt="Image 3">
-                    <img src="/Assets/images/about4.jpg" class="img-container" alt="Image 4">
+                    @foreach($galleries as $gallery)
+
+                    <img class="img-container" src="{{ asset('images/' . $gallery->image_path) }}" alt="{{ $gallery->title }}">
+                    @endforeach
                 </div>
-            </div>
+                </div>
+
 
         </section>
 
