@@ -30,6 +30,11 @@ class AppointmentController extends Controller
             // Add more validation rules as needed
         ]);
 
+        // Check if maximum bookings limit is reached
+        if (Appointment::whereDate('date', $validatedData['date'])->count() >= 5) {
+            return redirect()->back()->with('error', 'Maximum bookings reached for this date. PLease Choose another date');
+        }
+
         // Create a new appointment instance
         $appointment = new Appointment();
         $appointment->fname = $validatedData['fname'];
@@ -48,6 +53,7 @@ class AppointmentController extends Controller
         // Redirect to a success page or return JSON response
         return redirect()->back()->with('success', 'Appointment booked successfully!');
     }
+
     public function accept($id)
     {
         try {
@@ -58,7 +64,8 @@ class AppointmentController extends Controller
             $appointment->update(['status' => 'Accepted']);
 
             // Send email notification to the appointment owner
-            $message = "Good Day! MR/MS " . $appointment->fname . " " . $appointment->lname . ",\n\nThank you for booking with us!\n\nWe're excited to confirm your appointment. Our team is looking forward to providing you with a fantastic experience.\n\nIf you have any special requests or need to make changes to your booking, please don't hesitate to contact us.\n\nWe appreciate your trust in us and can't wait to see you soon!";
+            $message = "Good Day! MR/MS " . $appointment->fname . " " . $appointment->lname . ",\n\nThank you for booking with us!\n\nWe're excited to confirm your appointment. Our team is looking forward to providing you with a fantastic experience.\n\nPlease note that payment will be required upon arriving for your appointment.\n\nIf you have any special requests or need to make changes to your booking, please don't hesitate to contact us.\n\nWe appreciate your trust in us and can't wait to see you soon!";
+
 
             Mail::to($appointment->e_mail)->send(new AppointmentMail($appointment, $message));
 

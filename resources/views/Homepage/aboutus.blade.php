@@ -188,6 +188,39 @@
 
         </section>
 
+<<<<<<< Updated upstream
+=======
+        <section class="gallery spad">
+            <div class="container">
+                <div class="section-title mb-4">
+                    <span>discorver our unique collection</span>
+                    <h2>Our Gallery</h2>
+                </div>
+
+                <!-- Modal Structure -->
+                <div id="imageModal" class="modal">
+                    <span class="close"><i class='bx bx-x' ></i></span>
+                    <img class="modal-content" id="modalImage">
+                    <div class="caption" id="caption"></div>
+                    <button id="prevBtn" class="nav-btn"><i class='bx bx-chevron-left'></i></button>
+                    <button id="nextBtn" class="nav-btn"><i class='bx bx-chevron-right'></i></button>
+                </div>
+
+
+
+
+                <div class="img-section">
+                    @foreach($galleries as $gallery)
+
+                    <img class="img-container" src="{{ asset('images/' . $gallery->image_path) }}" alt="{{ $gallery->title }}">
+                    @endforeach
+                </div>
+                </div>
+
+
+        </section>
+
+>>>>>>> Stashed changes
 
     </main>
 

@@ -20,19 +20,37 @@
             <li class="nav-item">
                 <a class="nav-link text-white {{ request()->is('/dashboard') ? 'active' : '' }}" href="{{ route('contact.index') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="material-icons opacity-10">dashboard</i>
+                        <i class="material-icons opacity-10">contact_mail</i> <!-- Material Icons icon for contact -->
                     </div>
                     <span class="nav-link-text ms-1">Contact</span>
                 </a>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link text-white {{ request()->is('/dashboard') ? 'active' : '' }}" href="{{ route('appointment.index') }}">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-
+                        <i class="fas fa-calendar-alt"></i> <!-- Font Awesome icon for calendar -->
                     </div>
                     <span class="nav-link-text ms-1">Appointment</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link text-white {{ request()->is('/dashboard') ? 'active' : '' }}" href="{{ route('galleries.index') }}">
+                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fas fa-images"></i> <!-- Font Awesome icon for images -->
+                    </div>
+                    <span class="nav-link-text ms-1">Gallery</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white {{ request()->is('/dashboard') ? 'active' : '' }}" href="{{ route('testimonial.index') }}">
+                    <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="fas fa-comments"></i> <!-- Font Awesome icon for comments/testimonials -->
+                    </div>
+                    <span class="nav-link-text ms-1">Testimonials</span>
+                </a>
+            </li>
+
             <li class="nav-item">
                 <a class="nav-link text-white {{ request()->is('/product') ? 'active' : '' }}" href="/product">
                     <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
