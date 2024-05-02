@@ -665,9 +665,9 @@ p {
     margin-left: auto;
     margin-right: auto;
 
-    border: 3px solid var(--var-highlights); 
+    border: 3px solid var(--var-highlights);
     background-color: var(--var-accent);
-    
+
 }
 
 .team-name h4 {
@@ -694,10 +694,9 @@ p {
 
 .why-us {
     background-color: rgb(220, 220, 220, .3);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.why-us .col-md-6 .reason{
+.why-us .col-md-6 .reason {
     margin: 8px;
     background-color: #ffffff;
     padding: 8px;
@@ -705,25 +704,105 @@ p {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.why-us .col-md-6 img{
+.why-us .col-md-6 img {
     width: 60px;
     background-color: var(--var-secondary-background);
     padding: 8px;
     border-radius: 8px;
     margin: 16px;
-   
+
 }
 
-.why-us .title h4{
+.why-us .title h4 {
     color: var(--var-primary);
     font-weight: 600;
 }
 
-.why-us .description p{
+.why-us .description p {
     color: var(--var-darkcolor);
     font-weight: 500;
     font-size: 14px;
 }
+
+/* OUR GALLERY */
+.img-section {
+    display: flex;
+    justify-content: center;
+    /* Centers elements horizontally */
+    align-items: center;
+    /* Centers elements vertically, if needed */
+    flex-wrap: wrap;
+    /* Allows elements to wrap, which helps in creating a responsive layout */
+}
+
+.img-section .img-container {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    margin: 8px;
+    /* Adds space between images */
+    border-radius: 16px
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 650;
+    max-height: 650px;
+}
+
+.close .bx{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: var(--var-light) !important;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: var(--var-highlights) !important;
+    border: none;
+    padding: 8px;
+    border-radius: 50px;
+    color: var(--var-darkcolor);
+   
+}
+
+
+#prevBtn {
+    left: 20px;
+}
+
+#nextBtn {
+    right: 20px;
+}
+
+
+
+
+
+
 /* FAQ */
 
 .question-section .section-title h2 {
