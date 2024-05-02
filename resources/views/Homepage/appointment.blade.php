@@ -90,8 +90,12 @@
                                                         <div class="form-group">
                                                             <label for="date">Date </label>
                                                             <input type="date" name="date" id="date">
+                                                            @error('date')
+                                                                <div class="text-danger">{{ $message }}</div>
+                                                            @enderror
                                                         </div>
                                                     </div>
+
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="time">Time</label>
@@ -362,7 +366,7 @@
 
 
     </main>
-   
+
 
 
     @include('layout.home.footer')
@@ -372,7 +376,7 @@
     <!-- end Script -->
     @include('layout.home.end')
 
-  
+
 
     <script>
         var currentTab = 0; // Current tab is set to be the first tab (0)

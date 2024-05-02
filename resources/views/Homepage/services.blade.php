@@ -144,9 +144,9 @@
                                         </div>
                                         <hr>
                                         <div class="inclusion px-2">
-                                            <ul>
+                                            
                                                 {{ $nail->service }}
-                                            </ul>
+                                           
                                         </div>
                                         <hr>
                                         <div class="service-title">

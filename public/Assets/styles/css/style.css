@@ -12,10 +12,7 @@
     --var-accent: #49706B;
     --var-highlights: #DBA26D;
     --var-secondary-background: rgb(244, 224, 201, .3);
-    --var-gradient-header: linear-gradient(to bottom, #B38A54, #DAA06B, #8C5A31, #6d492c);
-
-
-
+    --var-gradient-header: linear-gradient(to bottom, #B38A54, #DAA06B, #8C5A31, #6d492c);    
 }
 
 html,
@@ -24,7 +21,6 @@ body {
     font-family: "Montserrat", sans-serif;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
-
 }
 
 h1,
@@ -93,10 +89,6 @@ ol {
     width: 100%;
 }
 
-
-
-
-
 .text {
     white-space: nowrap;
     padding-inline-end: 40px;
@@ -118,13 +110,6 @@ ol {
     color: #fff;
     z-index: 2;
 }
-
-
-
-
-
-
-
 
 /*---------------------
   Helper CSS

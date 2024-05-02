@@ -315,88 +315,6 @@
 
     <!-- Services Section End -->
 
-    <!-- <section class="services-section spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12" data-aos="fade-up" data-aos-duration="600">
-                    <div class="section-title">
-                        <span>What We Do</span>
-                        <h2>Discover Our Services</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row" data-aos="fade-up" data-aos-duration="600">
-                <div class="col-md-3 px-0 ">
-                    <div class="card card-section">
-                        <div class="card-body">
-                            <div class="image-container">
-                                <img src="/Assets/images/right-image.png" alt="">
-                            </div>
-                            <div class="service-header text-center">
-                                <h3>Facials</h3>
-                            </div>
-                            <div class="service-description text-center">
-                                <p>Revitalize your skin with our expert facial treatments. Pamper yourself and reveal glowing, youthful skin.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 px-0 ">
-                    <div class="card card-section">
-                        <div class="card-body">
-                            <div class="image-container">
-                                <img src="/Assets/images/waxing.png" alt="">
-                            </div>
-                            <div class="service-header text-center">
-                                <h3>Waxing</h3>
-                            </div>
-                            <div class="service-description text-center">
-                                <p>Say goodbye to unwanted hair with our professional waxing services. Enjoy smooth, silky skin that lasts.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 px-0 ">
-                    <div class="card card-section">
-                        <div class="card-body">
-                            <div class="image-container">
-                                <img src="/Assets/images/nail.png" alt="">
-                            </div>
-                            <div class="service-header text-center">
-                                <h3>Nails</h3>
-                            </div>
-                            <div class="service-description text-center">
-                                <p>Elevate your look with our expert nail services. Experience professional care and stunning results.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 px-0 ">
-                    <div class="card card-section">
-                        <div class="card-body">
-                            <div class="image-container">
-                                <img src="/Assets/images/laser.png" alt="">
-                            </div>
-                            <div class="service-header text-center">
-                                <h3>Laser</h3>
-                            </div>
-                            <div class="service-description text-center">
-                                <p>Experience the power of laser technology for smooth, hair-free skin. Say hello to effortless beauty.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="service-button">
-                <a href="#" class="button">View All</a>
-            </div>
-
-        </div>
-    </section> -->
-    <!-- Services Section End -->
-
     <!-- Testimonial Section Begin -->
     <section class="testimonial-section spad">
         <div class="container">
@@ -491,8 +409,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <span>Hotel News</span>
-                        <h2>Our Blog & Event</h2>
+                        <span>Check our promo</span>
+                        <h2>Our Promo</h2>
                     </div>
                 </div>
             </div>

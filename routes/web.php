@@ -11,6 +11,8 @@ use App\Http\Controllers\LaserController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\TestimonialController;
 /*
 
 /*
@@ -81,3 +83,15 @@ Route::get('/appointment', [AppointmentController::class, 'index'])->name('appoi
 Route::post('/appointments/{id}/accept', [AppointmentController::class, 'accept'])->name('appointment.accept');
 
 Route::get('/Le-Luxe/About-Us', [HomeController::class, 'aboutus']);
+
+//gallery
+Route::get('/galleries', [GalleryController::class, 'index'])->name('galleries.index');
+Route::post('/galleries', [GalleryController::class, 'store'])->name('galleries.store');
+
+//testimonial
+
+Route::get('/testimonials', [TestimonialController::class, 'index'])->name('testimonial.index');
+Route::post('/testimonials', [TestimonialController::class, 'store'])->name('testimonial.store');
+Route::get('/testimonials/{id}', [TestimonialController::class, 'show'])->name('testimonial.show');
+Route::put('/testimonials/{id}', [TestimonialController::class, 'update'])->name('testimonial.update');
+Route::delete('/testimonials/{id}', [TestimonialController::class, 'destroy'])->name('testimonial.destroy');
