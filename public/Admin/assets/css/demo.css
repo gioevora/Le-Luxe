@@ -105,3 +105,28 @@
   text-align: center;
   margin-top: 1rem;
 }
+
+
+.container-file {
+	padding: 16px;
+	margin: 8px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	background-color: #fcfcfc;
+	width: 100%;
+}
+
+
+
+.drop_box {
+	margin: 10px 0;
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border: 3px dotted #a3a3a3;
+	border-radius: 5px;
+	width: 100%;
+}
