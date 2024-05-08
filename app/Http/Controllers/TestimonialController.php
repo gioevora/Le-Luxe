@@ -12,6 +12,12 @@ class TestimonialController extends Controller
         return view('testimonials.index', compact('testimonials'));
     }
 
+    public function viewTestimony()
+    {
+        $testimonials = Testimonial::all();
+        return view('LeLuxeAdmin.LeLuxeAdminPage.testimony', compact('testimonials'));
+    }
+
     public function store(Request $request)
     {
         $validatedData = $request->validate([

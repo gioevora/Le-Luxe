@@ -115,9 +115,7 @@
                                     <option value="EMSCULPT">EMSCULPT</option>
                                     <option value="EXILIS">EXILIS</option>
                                     <option value="6 IN 1 RF">6 IN 1 RF</option>
-                                    <option value="
-                                    MESO LIPO">
-                                    MESO LIPO</option>
+                                    <option value="MESO LIPO">MESO LIPO</option>
 
                                 </select>
                             </div>

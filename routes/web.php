@@ -12,6 +12,7 @@ use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\SlimmingController;
 use App\Http\Controllers\TestimonialController;
 /*
 
@@ -71,14 +72,16 @@ Route::post('/Bookings', [BookingController::class, 'store'])->name('booking.sto
 
 //contactus
 Route::get('/ContactUS', [HomeController::class, 'contact'])->name('contact');
-Route::post('/submit-form', [ContactFormController::class, 'submitForm'])->name('submit.form');
+
 
 Route::get('/Contacts', [ContactFormController::class, 'index'])->name('contact.index');
-Route::post('/contacts/{id}/accept', [ContactFormController::class, 'accept'])->name('contacts.accept');
+
 
 //apointment
 Route::post('/submit-appointment', [AppointmentController::class, 'store'])->name('submit.appointment');
 Route::get('/appointment', [AppointmentController::class, 'index'])->name('appointment.index');
+
+
 
 Route::post('/appointments/{id}/accept', [AppointmentController::class, 'accept'])->name('appointment.accept');
 
@@ -86,7 +89,7 @@ Route::get('/Le-Luxe/About-Us', [HomeController::class, 'aboutus']);
 
 //gallery
 Route::get('/galleries', [GalleryController::class, 'index'])->name('galleries.index');
-Route::post('/galleries', [GalleryController::class, 'store'])->name('galleries.store');
+
 
 //testimonial
 
@@ -95,3 +98,43 @@ Route::post('/testimonials', [TestimonialController::class, 'store'])->name('tes
 Route::get('/testimonials/{id}', [TestimonialController::class, 'show'])->name('testimonial.show');
 Route::put('/testimonials/{id}', [TestimonialController::class, 'update'])->name('testimonial.update');
 Route::delete('/testimonials/{id}', [TestimonialController::class, 'destroy'])->name('testimonial.destroy');
+
+
+//Appointment Starts here
+Route::get('/LeLuxe/Appointment', [AppointmentController::class, 'LeLuxeAppointment']);
+Route::get('/View-Appointment/{id}', [AppointmentController::class, 'viewAppointment'])->name('appointment.show');
+Route::post('/appointments/{id}', [AppointmentController::class, 'accept'])->name('appointment.accept');
+// Appointment Ends here
+
+
+// Facial Services
+Route::get('/LeLuxe/Facial', [AdminController::class, 'LeLuxeFacial']);
+
+// Waxing Services
+Route::get('/LeLuxe/Waxing', [AdminController::class, 'LeLuxeWaxing']);
+
+// Nails Services
+Route::get('/LeLuxe/Nails', [AdminController::class, 'LeLuxeNails']);
+
+// Hair
+Route::get('/LeLuxe/Hair', [HairsController::class, 'viewHair']);
+
+// Laser
+Route::get('/LeLuxe/Laser', [LaserController::class, 'viewLaser']);
+
+// Laser
+Route::get('/LeLuxe/Slimming', [SlimmingController::class, 'viewSlimming']);
+Route::post('/addSlimming', [SlimmingController::class, 'store'])->name('slimming.store');
+
+
+// Contact us
+Route::get('/LeLuxe/Contacts', [ContactFormController::class, 'contactUs']);
+Route::get('/submit-form/', [ContactFormController::class, 'submitForm'])->name('submit.form');
+Route::get('/contacts/{id}', [ContactFormController::class, 'accept'])->name('contacts.accept');
+
+// Gallery
+Route::get('/LeLuxe/Galleries', [GalleryController::class, 'viewGallery']);
+Route::post('/galleries', [GalleryController::class, 'store'])->name('galleries.store');
+
+// Testemonial
+Route::get('/LeLuxe/Testimonials', [TestimonialController::class, 'viewTestimony']);

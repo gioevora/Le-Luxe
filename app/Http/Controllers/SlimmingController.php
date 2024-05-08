@@ -12,6 +12,12 @@ class SlimmingController extends Controller
         return view('admin.slimming.index', compact('slim'));
     }
 
+    public function viewSlimming()
+    {
+        $service = Slimming::all();
+        return view('LeLuxeAdmin.LeLuxeAdminPage.Services.slimming', compact('service'));
+    }
+
     // Store the laser services in the database
     public function store(Request $request)
     {
@@ -24,8 +30,8 @@ class SlimmingController extends Controller
 
         // Create a new service instance
         $service = new Slimming();
-        $service->service = $validatedData['service'];
-        $service->price = $validatedData['price'];
+        $service->serviceType = $validatedData['service'];
+        $service->sessionPrice = $validatedData['price'];
         $service->title = $validatedData['title'];
 
         // Save the service to the database

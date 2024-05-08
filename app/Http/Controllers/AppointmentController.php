@@ -14,6 +14,18 @@ class AppointmentController extends Controller
         $appointments = Appointment::all();
         return view('Admin.appointment.index', compact('appointments'));
     }
+
+    public function LeLuxeAppointment(){
+        $appointments = Appointment::all();
+        return view('LeLuxeAdmin.LeLuxeAdminPage.appointment', compact('appointments'));
+    }
+
+    public function viewAppointment($id){
+        $appointments = Appointment::find($id);
+        return view('LeLuxeAdmin.LeLuxeAdminPage.view-appointment', compact('appointments'));
+    }
+
+
     public function store(Request $request)
     {
         // Validate the form data

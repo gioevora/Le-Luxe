@@ -12,6 +12,12 @@ class GalleryController extends Controller
         return view('gallery.index', compact('galleries'));
     }
 
+    public function viewGallery()
+    {
+        $galleries = Gallery::all();
+        return view('LeLuxeAdmin.LeLuxeAdminPage.gallery', compact('galleries'));
+    }
+
     public function store(Request $request)
     {
         // Validate the incoming request data

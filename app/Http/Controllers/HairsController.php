@@ -12,6 +12,12 @@ class HairsController extends Controller
         return view('admin.hairs.index', compact('hair'));
     }
 
+    public function viewHair()
+    {
+        $hair = Hairs::all();
+        return view('LeLuxeAdmin.LeLuxeAdminPage.Services.hair', compact('hair'));
+    }
+
     public function store(Request $request)
     {
         $request->validate([

@@ -13,6 +13,12 @@ class LaserController extends Controller
         return view('admin.laser.index', compact('lasers'));
     }
 
+    public function viewLaser()
+    {
+        $service = Laser::all();
+        return view('LeLuxeAdmin.LeLuxeAdminPage.Services.laser', compact('service'));
+    }
+
     // Store the laser services in the database
     public function store(Request $request)
     {

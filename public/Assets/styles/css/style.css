@@ -725,6 +725,7 @@ p {
 }
 
 /* OUR GALLERY */
+
 .img-section {
     display: flex;
     justify-content: center;
@@ -732,8 +733,10 @@ p {
     align-items: center;
     /* Centers elements vertically, if needed */
     flex-wrap: wrap;
+    background-color: black;
     /* Allows elements to wrap, which helps in creating a responsive layout */
 }
+
 
 .img-section .img-container {
     width: 100%;

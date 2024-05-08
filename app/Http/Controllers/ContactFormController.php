@@ -16,6 +16,13 @@ class ContactFormController extends Controller
         return view('Admin.contact.index', compact('contacts'));
     }
 
+    public function contactUs(){
+        $contacts = ContactMessage::all();
+        return view('LeLuxeAdmin.LeLuxeAdminPage.contact', compact('contacts'));
+    }
+
+
+
     public function submitForm(Request $request)
     {
         // Validate incoming request
